@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rocotai Website Protection Services</title>
+    <!-- Add any additional meta tags, CSS, or scripts here -->
+    <style>
+        /* Add your CSS styles here */
+        /* This is just a placeholder for demonstration */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            color: white;
+            text-align: center;
+        }
+
+        .container {
+            opacity: 0; /* Initially hide containers */
+            transition: opacity 0.5s ease; /* Add transition for smooth fade-in effect */
+            text-align: justify; /* Justify text within containers */
+            text-align-last: center; /* Align last line center for better appearance */
+            padding: 0 20px; /* Add padding for better readability */
+        }
+
+        .show {
+            opacity: 1; /* Show container when class is added */
+        }
+
+        .request-demo-btn {
+            background-color: #ff8c00;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            display: inline-block; /* Change to inline-block for better alignment */
+            margin-top: 20px;
+            margin-right: 20px; /* Adjust the margin-right to align the button to the right */
+            float: right; /* Align the button to the right */
+        }
+
+        .request-demo-btn a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .request-demo-btn:hover {
+            background-color: #555;
+        }
+
+        /* Add more styles as needed */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="request-demo-btn">
+            <a href="request.html">Request Demo</a>
+        </div>
+    </div>
+
+    <h1 style="font-size: 30px;">⠀</h1>
+
+    <header class="container">
+        <div>
+            <h1>Rocotai Vulnerability Scanner</h1>
+            <p style="font-size: 20px;">Vulnerability management made easy and fast.</p>
+            <p style="font-size: 20px;">Find weaknesses and prevent downtime with website vulnerability scanning. Automated to save you time.</p>
+            <a href="request.html" style="background-color: #ff8c00;
+              color: white;
+              padding: 10px 20px;
+              border-radius: 5px;
+              width: fit-content;
+              text-align: center;">Request Scan</a>
+        </div>
+    </header>
+
+    <div class="container">
+        <h2>Welcome to Rocotai Cyber Protection Services</h2>
+        <p style="font-size: 20px;">Protect your website from cyber threats with our comprehensive security solutions. We help organizations reduce their cyber attack exposure by providing effortless cyber security. Our mission is to keep you safe in the cyber world without any cost at all.</p>
+    </div>
+
+    <div class="container">
+        <h2><u>Our Services</u></h2>
+        <p style="font-size: 20px;">You can send us your website URL and we will help you scan your website for free. You can request for either quick scan or deep scan. You will receive report of the scan via e-mail quick scan takes 1 day to finish scanning and deep scan takes 2 weeks to finish scanning. Both quick and deep scans are free to use. We also suggest ways to secure website after the report.</p>
+
+      
+      <p style="font-size: 20px; color: red;">Note that it does not guarantee that your website is safe from hackers, we only reduce the chances of getting hacked and made it difficult for hackers to attack.</p>
+        
+    </div>
+
+    <div class="container">
+        <h2><u>Contact Us</u></h2>
+        <p style="font-size: 20px;">Have questions or need assistance? Reach out to us!</p>
+        <!-- Add contact form and information here -->
+    </div>
+
+    <footer class="container">
+        <div>
+            <p>&copy; 2024 Rocotai. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Function to check if an element is in viewport
+        function isInViewport(element) {
+            const rect = element.getBoundingClientRect();
+            return (
+                rect.top >= 0 &&
+                rect.left >= 0 &&
+                rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+                rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+            );
+        }
+
+        // Function to add 'show' class to elements when they come into view
+        function showOnScroll() {
+            const containers = document.querySelectorAll('.container');
+            containers.forEach(container => {
+                if (isInViewport(container)) {
+                    container.classList.add('show');
+                }
+            });
+        }
+
+        // Initial check when the page loads
+        showOnScroll();
+
+        // Add event listener for scroll to check again
+        window.addEventListener('scroll', showOnScroll);
+    </script>
+</body>
+</html>
